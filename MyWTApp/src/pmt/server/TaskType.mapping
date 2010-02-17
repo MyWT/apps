@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Vinod.Pahuja -->
+<!-- Modified: Monday, April 20, 2009 02:31:39 PM -->
+<mapping>
+   <package name="pmt.server">
+      <class name ="TaskType">
+         
+        <jdbc-class-map type="base" pk-column= "TaskTypeId" table="TaskType"/>
+        <jdbc-version-ind type="version-number" column="JDOLOCKX"/>
+         
+        
+        <field name="taskType">
+           <jdbc-field-map type="value" column="TaskType"/>
+        </field>
+         
+      </class>
+   </package>
+</mapping>

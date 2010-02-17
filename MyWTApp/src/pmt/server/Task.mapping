@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Vinod.Pahuja -->
+<!-- Modified: Monday, April 20, 2009 02:31:39 PM -->
+<mapping>
+   <package name="pmt.server">
+      <class name ="Task">
+         
+        <jdbc-class-map type="base" pk-column= "TaskId" table="Task"/>
+        <jdbc-version-ind type="version-number" column="JDOLOCKX"/>
+         
+        
+        <field name="taskNo">
+           <jdbc-field-map type="value" column="TaskNo"/>
+        </field>  
+        <field name="taskName">
+           <jdbc-field-map type="value" column="TaskName"/>
+        </field>  
+        <field name="description">
+           <jdbc-field-map type="value" column="Description"/>
+        </field>  
+        <field name="remarks">
+           <jdbc-field-map type="value" column="Remarks"/>
+        </field>  
+        <field name="estimatedTime_hh">
+           <jdbc-field-map type="value" column="EstimatedTime_hh"/>
+        </field>  
+        <field name="estimatedTime_mm">
+           <jdbc-field-map type="value" column="EstimatedTime_mm"/>
+        </field>  
+        <field name="startDate">
+           <jdbc-field-map type="value" column="StartDate"/>
+        </field>  
+        <field name="endDate">
+           <jdbc-field-map type="value" column="EndDate"/>
+        </field>  
+        <field name="dueDate">
+           <jdbc-field-map type="value" column="DueDate"/>
+        </field>  
+        <field name="taskLevel">
+           <jdbc-field-map type="value" column="TaskLevel"/>
+        </field>  
+        <field name="createdOn">
+           <jdbc-field-map type="value" column="CreatedOn"/>
+        </field>  
+        <field name="updatedOn">
+           <jdbc-field-map type="value" column="UpdatedOn"/>
+        </field>
+         
+        
+        <field name="phaseId">
+           <jdbc-field-map type="value" column="PhaseId"/>
+        </field>  
+        <field name="projectId">
+           <jdbc-field-map type="value" column="ProjectId"/>
+        </field>  
+        <field name="createdById">
+           <jdbc-field-map type="value" column="CreatedById"/>
+        </field>  
+        <field name="statusId">
+           <jdbc-field-map type="value" column="StatusId"/>
+        </field>  
+        <field name="assigneeId">
+           <jdbc-field-map type="value" column="AssigneeId"/>
+        </field>  
+        <field name="assignorId">
+           <jdbc-field-map type="value" column="AssignorId"/>
+        </field>  
+        <field name="taskTypeId">
+           <jdbc-field-map type="value" column="TaskTypeId"/>
+        </field>  
+        <field name="priorityId">
+           <jdbc-field-map type="value" column="PriorityId"/>
+        </field>  
+        <field name="parentTaskId">
+           <jdbc-field-map type="value" column="TaskId2"/>ERRROR ERROR - TaskId2 ! = ParentTaskId
+        </field>
+      
+      </class>
+   </package>
+</mapping>

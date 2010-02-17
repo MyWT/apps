@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Vinod.Pahuja -->
+<!-- Modified: Monday, April 20, 2009 02:31:39 PM -->
+<mapping>
+   <package name="pmt.server">
+      <class name ="Phase">
+         
+        <jdbc-class-map type="base" pk-column= "PhaseId" table="Phase"/>
+        <jdbc-version-ind type="version-number" column="JDOLOCKX"/>
+         
+        
+        <field name="phaseCode">
+           <jdbc-field-map type="value" column="PhaseCode"/>
+        </field>  
+        <field name="phaseName">
+           <jdbc-field-map type="value" column="PhaseName"/>
+        </field>  
+        <field name="createdOn">
+           <jdbc-field-map type="value" column="CreatedOn"/>
+        </field>  
+        <field name="updatedOn">
+           <jdbc-field-map type="value" column="UpdatedOn"/>
+        </field>
+         
+        
+        <field name="project">
+           <extension vendor-name="kodo" key="jdbc-delete-action" value="Exception"/>
+           <jdbc-field-map type="one-one" column.ProjectId="ProjectId"/>
+        </field>  
+        <field name="statusId">
+           <jdbc-field-map type="value" column="StatusId"/>
+        </field>  
+        <field name="createdById">
+           <jdbc-field-map type="value" column="CreatedById"/>
+        </field>  
+        <field name="phaseOwnerId">
+           <jdbc-field-map type="value" column="PhaseOwnerId"/>
+        </field>
+      
+      </class>
+   </package>
+</mapping>

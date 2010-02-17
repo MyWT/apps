@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Vinod.Pahuja -->
+<!-- Modified: Monday, April 20, 2009 02:31:39 PM -->
+<mapping>
+   <package name="pmt.server">
+      <class name ="WorkLog">
+         
+        <jdbc-class-map type="base" pk-column= "WorkLogId" table="WorkLog"/>
+        <jdbc-version-ind type="version-number" column="JDOLOCKX"/>
+         
+        
+        <field name="timeWorked_hh">
+           <jdbc-field-map type="value" column="TimeWorked_hh"/>
+        </field>  
+        <field name="timeWorked_mm">
+           <jdbc-field-map type="value" column="TimeWorked_mm"/>
+        </field>  
+        <field name="remarks">
+           <jdbc-field-map type="value" column="Remarks"/>
+        </field>  
+        <field name="loggenOn">
+           <jdbc-field-map type="value" column="LoggenOn"/>
+        </field>
+         
+        
+        <field name="userId">
+           <jdbc-field-map type="value" column="UserId"/>
+        </field>  
+        <field name="taskId">
+           <jdbc-field-map type="value" column="TaskId"/>
+        </field>
+      
+      </class>
+   </package>
+</mapping>

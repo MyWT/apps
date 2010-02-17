@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Vinod.Pahuja -->
+<!-- Modified: Monday, April 20, 2009 02:31:39 PM -->
+<mapping>
+   <package name="pmt.server">
+      <class name ="SprintTaskDetail">
+         
+        <jdbc-class-map type="base" pk-column= "SprintTaskDetailId" table="SprintTaskDetail"/>
+        <jdbc-version-ind type="version-number" column="JDOLOCKX"/>
+            
+        
+        <field name="sprint">
+           <extension vendor-name="kodo" key="jdbc-delete-action" value="Exception"/>
+           <jdbc-field-map type="one-one" column.SprintId="SprintId"/>
+        </field>  
+        <field name="taskId">
+           <jdbc-field-map type="value" column="TaskId"/>
+        </field>
+      
+      </class>
+   </package>
+</mapping>

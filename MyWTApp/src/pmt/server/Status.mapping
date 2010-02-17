@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Vinod.Pahuja -->
+<!-- Modified: Monday, April 20, 2009 02:31:39 PM -->
+<mapping>
+   <package name="pmt.server">
+      <class name ="Status">
+         
+        <jdbc-class-map type="base" pk-column= "StatusId" table="Status"/>
+        <jdbc-version-ind type="version-number" column="JDOLOCKX"/>
+         
+        
+        <field name="status">
+           <jdbc-field-map type="value" column="Status"/>
+        </field>
+         
+      </class>
+   </package>
+</mapping>

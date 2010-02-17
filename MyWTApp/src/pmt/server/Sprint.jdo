@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- JDO Persistence Descriptor -->
+<!-- JDO Provider: SolarMetric Kodo -->
+<!-- Author: Vinod.Pahuja -->
+<!-- Modified: Monday, April 20, 2009 02:31:39 PM -->
+<!-- DOCTYPE jdo SYSTEM "jdo.dtd"-->
+<jdo>
+   <package name="pmt.server">
+      <class name ="Sprint">
+         
+         <extension vendor-name="kodo" key="detachable" value="true"/>
+         
+         <field name="sprintName"/>
+         
+         <field name="estimatedTime"/>
+         
+         <field name="startDate"/>
+         
+         <field name="endDate"/>
+         
+         <field name="dueDate"/>
+         
+         <field name="projectId"/>
+         
+         <field name="sprintTaskDetails">
+            <collection element-type ="pmt.server.SprintTaskDetail">
+               <extension vendor-name="kodo" key="fetch-group" value="sprint.sprintTaskDetails"/>
+               <extension vendor-name="kodo" key="inverse-owner" value="Sprint"/>
+               <extension vendor-name="kodo" key="element-dependent" value="true"/>
+            </collection>
+         </field>
+         
+         <field name="phaseId"/>
+      </class>
+   </package>
+</jdo>
