@@ -1,0 +1,16 @@
+<module rename-to='mywtapp'>
+
+	<inherits name="com.gwtext.GwtExt" />
+
+	<stylesheet src="js/ext/resources/css/ext-all.css" />
+	<script src="js/ext/adapter/ext/ext-base.js" />
+	<script src="js/ext/ext-all.js" />
+
+	<inherits name="rnd.webapp.mwt.MGWT" />
+
+	<inherits name="aa.AA" />
+	<inherits name="pmt.PMT" />
+	
+	<entry-point class="rnd.webapp.mwtapp.client.MyWTApp" />
+	
+</module>
