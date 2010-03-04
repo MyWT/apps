@@ -1,9 +1,6 @@
 package rnd.webapp.mwt.server.application;
 
-public class DefaultModuleHandler extends AbstractModuleHandler implements ModuleHandler {
-
-	DefaultModuleHandler() {
-	}
+public class DefaultModuleHandler extends AbstractModuleHandler {
 
 	private static class DefaultModuleHandlerHolder {
 		static DefaultModuleHandler sharedInstace = new DefaultModuleHandler();
@@ -14,12 +11,13 @@ public class DefaultModuleHandler extends AbstractModuleHandler implements Modul
 	}
 
 	@Override
-	public void initialiseModule() {
-	}
-	
-	@Override
 	public ApplicationBeanHandler getApplicationBeanHandler(String appBeanName) {
 		return DefaultApplicationBeanHandler.getSharedInstance();
+	}
+
+	@Override
+	public void initModule() {
+		// Default Module
 	}
 
 }

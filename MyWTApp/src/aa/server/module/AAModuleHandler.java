@@ -8,12 +8,7 @@ import aa.server.module.appbean.UserHandler;
 public class AAModuleHandler extends AbstractModuleHandler implements ModuleHandler {
 
 	@Override
-	public void initialiseModule() {
-		addApplicationBeanHandler("User", User.class,new UserHandler());
+	public void initModule() {
+		registerApplicationBean("User", User.class, new UserHandler());
 	}
-
-	@Override
-	protected void initialiseApplication() {
-	}
-
 }

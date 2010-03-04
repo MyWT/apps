@@ -4,9 +4,9 @@ public class ExceptionUtils {
 
 	public static Object makeUnchecked(Block block) {
 		try {
-			return block.doBlock();
+			return block.execute();
 		}
-		catch (Exception e) {
+		catch (Throwable e) {
 			throw new RuntimeException(e);
 		}
 	}

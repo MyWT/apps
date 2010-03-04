@@ -1,6 +1,7 @@
 package rnd.webapp.mwt.server.application;
 
 import rnd.webapp.mwt.server.data.ViewMetaData;
+import rnd.webapp.mwt.server.data.impl.SQLViewMetaDataImpl;
 import rnd.webapp.mwt.server.data.impl.ViewMetaDataImpl;
 
 public class DefaultApplicationBeanHandler extends AbstractABHandler {
@@ -18,7 +19,7 @@ public class DefaultApplicationBeanHandler extends AbstractABHandler {
 
 	public ViewMetaData getViewMetaData(String viewName) {
 
-		ViewMetaDataImpl vmd = new ViewMetaDataImpl();
+		SQLViewMetaDataImpl vmd = new SQLViewMetaDataImpl();
 		vmd.setViewQuery("Select * From " + viewName);
 		vmd.setViewName(viewName);
 

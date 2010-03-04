@@ -8,8 +8,8 @@ public class MyApplicationHandler extends AbstractApplicationHandler {
 
 	@Override
 	protected void initialiseApplication() {
-		addModuleHandler("AA", new AAModuleHandler());
-		addModuleHandler("PMT", new PMTModuleHandler());
+		registerModule("AA", new AAModuleHandler());
+		registerModule("PMT", new PMTModuleHandler());
 	}
 
 }

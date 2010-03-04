@@ -7,27 +7,21 @@ import rnd.webapp.mwt.server.data.ViewMetaData;
 
 public class ViewMetaDataImpl implements ViewMetaData {
 
-	private String viewQuery;
+	private String viewName;
+
+	private String[] viewColumnsNames;
+
+	private String[] viewColumnsExpressions;
 
 	private int idColumnIndex;
 
-	private int displayColumnIndex;
+	private String idColumnName;
 
-	private String viewName;
+	private int displayColumnIndex;
 
 	private String displayColumnName;
 
-	private String idColumnName;
-
 	private Map<String, String> filterMap;
-
-	public void setViewQuery(String viewQuery) {
-		this.viewQuery = viewQuery;
-	}
-
-	public String getViewQuery() {
-		return this.viewQuery;
-	}
 
 	public void setIdColumnIndex(int idColumnIndex) {
 		this.idColumnIndex = idColumnIndex;
@@ -69,13 +63,15 @@ public class ViewMetaDataImpl implements ViewMetaData {
 		this.idColumnName = idColumnName;
 	}
 
-	public String getFilter(String filterName) {
-		if (filterMap == null) { return null; }
+	public String getFilterExpression(String filterName) {
+		if (filterMap == null) {
+			return null;
+		}
 		return filterMap.get(filterName);
 	}
 
-	public void setFilter(String filterName, String filter) {
-		getFilterMap().put(filterName, filter);
+	public void addFilter(String filterName, String filterExpression) {
+		getFilterMap().put(filterName, filterExpression);
 	}
 
 	private Map<String, String> getFilterMap() {
@@ -83,6 +79,22 @@ public class ViewMetaDataImpl implements ViewMetaData {
 			filterMap = new HashMap<String, String>();
 		}
 		return filterMap;
+	}
+
+	public String[] getViewColumnsNames() {
+		return viewColumnsNames;
+	}
+
+	public void setViewColumnsNames(String[] viewColumnsNames) {
+		this.viewColumnsNames = viewColumnsNames;
+	}
+
+	public String[] getViewColumnsExpressions() {
+		return viewColumnsExpressions;
+	}
+
+	public void setViewColumnsExpressions(String[] viewColumnsExpressions) {
+		this.viewColumnsExpressions = viewColumnsExpressions;
 	}
 
 }

@@ -13,7 +13,7 @@ public abstract class AbstractApplicationHandler implements ApplicationHandler {
 
 	protected abstract void initialiseApplication();
 
-	public void addModuleHandler(String moduleName, ModuleHandler moduleHandler) {
+	public void registerModule(String moduleName, ModuleHandler moduleHandler) {
 		moduleHandlerMap.put(moduleName, moduleHandler);
 	}
 

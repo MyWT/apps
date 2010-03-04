@@ -4,16 +4,18 @@ public interface ViewMetaData {
 
 	String getViewName();
 
-	String getViewQuery();
+	String[] getViewColumnsNames();
+
+	String[] getViewColumnsExpressions();
 
 	int getIdColumnIndex();
 
-	int getDisplayColumnIndex();
-
 	String getIdColumnName();
+
+	int getDisplayColumnIndex();
 
 	String getDisplayColumnName();
 
-	String getFilter(String filterName);
+	String getFilterExpression(String filterName);
 
 }
