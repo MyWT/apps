@@ -2,7 +2,6 @@ package rnd.webapp.mwt.server.application;
 
 import rnd.webapp.mwt.server.data.ViewMetaData;
 import rnd.webapp.mwt.server.data.impl.SQLViewMetaDataImpl;
-import rnd.webapp.mwt.server.data.impl.ViewMetaDataImpl;
 
 public class DefaultApplicationBeanHandler extends AbstractABHandler {
 
