@@ -2,12 +2,12 @@ package rnd.webapp.mwt.client.gwtext.mvc.field;
 
 import java.util.Collection;
 
+import rnd.bean._Bean;
 import rnd.webapp.mwt.client.Logger;
-import rnd.webapp.mwt.client.bean._Bean;
-import rnd.webapp.mwt.client.bean._BoundList;
 import rnd.webapp.mwt.client.bean.IndexedValueChangedEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeListenerAdapter;
+import rnd.webapp.mwt.client.bean._BoundList;
 import rnd.webapp.mwt.client.data.ColumnMetaData;
 import rnd.webapp.mwt.client.data.DataTable;
 import rnd.webapp.mwt.client.data.Row;

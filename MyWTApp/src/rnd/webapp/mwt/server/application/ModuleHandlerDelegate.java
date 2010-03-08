@@ -11,12 +11,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import rnd.bean._Bean;
 import rnd.dao.DataAccessObject;
-import rnd.dao.rdbms.jdbc.SQLDataAccessObject;
+import rnd.dao.rdbms.jdbc.JDBCDataAccessObject;
 import rnd.dao.rdbms.jdbc.rsmdp.ResultSetMetaDataProcessor;
 import rnd.op.ObjectPersistor;
 import rnd.webapp.mwt.client.bean.ApplicationBean;
-import rnd.webapp.mwt.client.bean._Bean;
 import rnd.webapp.mwt.client.data.ColumnMetaData;
 import rnd.webapp.mwt.client.data.DataTable;
 import rnd.webapp.mwt.client.data.FilterInfo;
@@ -36,10 +36,8 @@ import rnd.webapp.mwt.server.application.utils.BeanUtils;
 import rnd.webapp.mwt.server.application.utils.BeanUtils.BeanCopyHelper;
 import rnd.webapp.mwt.server.application.utils.BeanUtils.ClientBeanCopyHelper;
 import rnd.webapp.mwt.server.application.utils.BeanUtils.ServerBeanCopyHelper;
-import rnd.webapp.mwt.server.data.NoSQLViewMetaData;
 import rnd.webapp.mwt.server.data.SQLViewMetaData;
 import rnd.webapp.mwt.server.data.ViewMetaData;
-import sun.org.mozilla.javascript.internal.debug.Debugger;
 
 public final class ModuleHandlerDelegate implements ModuleHandler {
 
@@ -173,7 +171,7 @@ public final class ModuleHandlerDelegate implements ModuleHandler {
 				// D.println("viewQuery", viewQuery);
 			}
 
-			Object[] result = (Object[]) SQLDataAccessObject.get().executeQuery(viewQuery, params, SQLDataAccessObject.ListArrayResultSetProcessor, cmdCreator, getConnection(), true);
+			Object[] result = (Object[]) JDBCDataAccessObject.get().executeQuery(viewQuery, params, JDBCDataAccessObject.ListArrayResultSetProcessor, cmdCreator, getConnection(), true);
 			// D.println("result", result);
 
 			ColumnMetaData[] columnMetaDatas = (ColumnMetaData[]) result[0];

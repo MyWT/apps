@@ -1,10 +1,10 @@
 package rnd.webapp.mwt.client.expression;
 
-import rnd.webapp.mwt.client.bean._Bean;
-import rnd.webapp.mwt.client.bean._BoundBean;
+import rnd.bean._Bean;
 import rnd.webapp.mwt.client.bean.IndexedValueChangedEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeListener;
+import rnd.webapp.mwt.client.bean._BoundBean;
 
 public class BeanPropertyExpression extends PropertyExpression {
 

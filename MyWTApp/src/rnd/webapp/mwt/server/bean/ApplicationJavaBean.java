@@ -1,5 +1,6 @@
 package rnd.webapp.mwt.server.bean;
 
+import rnd.bean.JavaBean;
 import rnd.webapp.mwt.client.bean.ApplicationBean;
 
 public class ApplicationJavaBean extends JavaBean implements ApplicationBean {

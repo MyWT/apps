@@ -4,9 +4,9 @@ import java.util.List;
 
 import rnd.webapp.mwt.client.bean.ApplicationBean;
 import rnd.webapp.mwt.client.bean.BindingManager;
-import rnd.webapp.mwt.client.bean._BoundBean;
 import rnd.webapp.mwt.client.bean.ValueChangeEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeListenerAdapter;
+import rnd.webapp.mwt.client.bean._BoundBean;
 import rnd.webapp.mwt.client.gwtext.mvc.page.GWTExtPage;
 import rnd.webapp.mwt.client.mvc.field.Field;
 import rnd.webapp.mwt.client.mvc.page.form.Form;

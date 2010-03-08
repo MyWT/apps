@@ -1,8 +1,8 @@
 package rnd.webapp.mwt.client.bean.impl;
 
-import rnd.webapp.mwt.client.bean._BoundBean;
 import rnd.webapp.mwt.client.bean.ValueChangeListener;
 import rnd.webapp.mwt.client.bean.ValueChangeSupport;
+import rnd.webapp.mwt.client.bean._BoundBean;
 import rnd.webapp.mwt.client.utils.ObjectUtils;
 
 public class BoundBean extends Bean implements _BoundBean {

@@ -1,6 +1,6 @@
 package rnd.webapp.mwt.client.bean.action;
 
-import rnd.webapp.mwt.client.bean._Bean;
+import rnd.bean._Bean;
 
 public class ValueChangeActionActivator {
 

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
-import rnd.webapp.mwt.client.bean.AbstractBean;
+import rnd.bean.AbstractBean;
 
 public class Bean extends AbstractBean {
 
