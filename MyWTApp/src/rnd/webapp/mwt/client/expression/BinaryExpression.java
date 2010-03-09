@@ -1,7 +1,5 @@
 package rnd.webapp.mwt.client.expression;
 
-import rnd.webapp.mwt.client.utils.WrapperUtils;
-
 public class BinaryExpression extends AbstractExpression implements BinaryOperation {
 
 	private Expression firstExpression;
@@ -28,21 +26,25 @@ public class BinaryExpression extends AbstractExpression implements BinaryOperat
 
 	private Object performBinaryOperation(Object firstValue, Object secondValue) {
 		switch (this.operation) {
-			case ADD:
-				return performAddOperation(firstValue, secondValue);
-			default:
-				throw new RuntimeException("Operation Not Supported");
+		case ADD:
+			return performAddOperation(firstValue, secondValue);
+		default:
+			throw new RuntimeException("Operation Not Supported");
 		}
 	}
 
 	private Object performAddOperation(Object firstValue, Object secondValue) {
 		// Check Null
 		boolean isBothNull = firstValue == null && secondValue == null;
-		if (isBothNull) { return null; }
+		if (isBothNull) {
+			return null;
+		}
 
 		// Check Number
 		boolean isNumber = firstValue instanceof Number && secondValue instanceof Number;
-		if (isNumber) { return new Double(WrapperUtils.getDoubleValue(firstValue) + WrapperUtils.getDoubleValue(secondValue)); }
+		if (isNumber) {
+			return new Double(WrapperUtils.getDoubleValue(firstValue) + WrapperUtils.getDoubleValue(secondValue));
+		}
 
 		// Concat String
 		String firstLiteralValue = "";

@@ -31,7 +31,6 @@ import rnd.webapp.mwt.client.rpc.ApplicationResponse;
 import rnd.webapp.mwt.client.rpc.ApplicationRequest.Method;
 import rnd.webapp.mwt.client.rpc.util.ARUtils;
 import rnd.webapp.mwt.client.utils.ObjectUtils;
-import rnd.webapp.mwt.client.utils.WrapperUtils;
 import rnd.webapp.mwt.server.application.utils.BeanUtils;
 import rnd.webapp.mwt.server.application.utils.BeanUtils.BeanCopyHelper;
 import rnd.webapp.mwt.server.application.utils.BeanUtils.ClientBeanCopyHelper;

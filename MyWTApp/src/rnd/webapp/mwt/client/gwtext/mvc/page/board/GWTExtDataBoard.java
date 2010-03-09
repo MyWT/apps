@@ -20,7 +20,6 @@ import rnd.webapp.mwt.client.mvc.field.Table.RowTableModel;
 import rnd.webapp.mwt.client.mvc.field.data.ReferenceField;
 import rnd.webapp.mwt.client.mvc.page.board.DataBoard;
 import rnd.webapp.mwt.client.rpc.ARCreator;
-import rnd.webapp.mwt.client.utils.WrapperUtils;
 
 import com.gwtext.client.widgets.Panel;
 

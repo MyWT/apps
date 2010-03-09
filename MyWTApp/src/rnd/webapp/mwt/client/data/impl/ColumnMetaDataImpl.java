@@ -5,7 +5,6 @@ import java.io.Serializable;
 import rnd.webapp.mwt.client.bean.DynaBean;
 import rnd.webapp.mwt.client.data.ColumnMetaData;
 import rnd.webapp.mwt.client.expression.Expression;
-import rnd.webapp.mwt.client.utils.WrapperUtils;
 
 public class ColumnMetaDataImpl extends DynaBean implements ColumnMetaData, Serializable {
 
