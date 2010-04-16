@@ -1,5 +1,6 @@
 package rnd.webapp.mwt.client.expression;
 
+import rnd.expression.AbstractExpression;
 import rnd.webapp.mwt.client.data.ColumnMetaData;
 import rnd.webapp.mwt.client.data.Row;
 

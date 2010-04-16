@@ -16,6 +16,7 @@ import rnd.dao.DataAccessObject;
 import rnd.dao.rdbms.jdbc.JDBCDataAccessObject;
 import rnd.dao.rdbms.jdbc.rsmdp.ResultSetMetaDataProcessor;
 import rnd.op.ObjectPersistor;
+import rnd.utils.WrapperUtils;
 import rnd.webapp.mwt.client.bean.ApplicationBean;
 import rnd.webapp.mwt.client.data.ColumnMetaData;
 import rnd.webapp.mwt.client.data.DataTable;

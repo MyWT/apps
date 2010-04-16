@@ -2,7 +2,7 @@ package rnd.webapp.mwt.client.data;
 
 import java.util.List;
 
-import rnd.webapp.mwt.client.expression.Expression;
+import rnd.expression.Expression;
 
 public interface FilterInfo {
 

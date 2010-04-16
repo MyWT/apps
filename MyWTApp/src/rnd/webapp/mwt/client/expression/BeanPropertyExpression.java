@@ -1,6 +1,9 @@
 package rnd.webapp.mwt.client.expression;
 
 import rnd.bean._Bean;
+import rnd.expression.PropertyExpression;
+import rnd.expression.XChangeEvent;
+import rnd.expression.XChangeListener;
 import rnd.webapp.mwt.client.bean.IndexedValueChangedEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeListener;

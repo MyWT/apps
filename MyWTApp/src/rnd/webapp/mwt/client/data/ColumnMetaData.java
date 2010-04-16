@@ -1,6 +1,7 @@
 package rnd.webapp.mwt.client.data;
 
-import rnd.webapp.mwt.client.expression.Expression;
+import rnd.expression.Expression;
+
 
 public interface ColumnMetaData {
 

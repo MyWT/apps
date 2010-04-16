@@ -2,9 +2,10 @@ package rnd.webapp.mwt.client.data.impl;
 
 import java.io.Serializable;
 
+import rnd.expression.Expression;
+import rnd.utils.WrapperUtils;
 import rnd.webapp.mwt.client.bean.DynaBean;
 import rnd.webapp.mwt.client.data.ColumnMetaData;
-import rnd.webapp.mwt.client.expression.Expression;
 
 public class ColumnMetaDataImpl extends DynaBean implements ColumnMetaData, Serializable {
 

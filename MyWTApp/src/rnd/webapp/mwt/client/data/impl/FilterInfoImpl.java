@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import rnd.expression.Expression;
 import rnd.webapp.mwt.client.data.FilterInfo;
-import rnd.webapp.mwt.client.expression.Expression;
 
 public class FilterInfoImpl implements FilterInfo, Serializable {
 

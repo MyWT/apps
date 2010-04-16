@@ -1,7 +1,7 @@
 package rnd.webapp.mwt.client.mvc.field.data;
 
+import rnd.expression.Expression;
 import rnd.webapp.mwt.client.data.FilterInfo;
-import rnd.webapp.mwt.client.expression.Expression;
 import rnd.webapp.mwt.client.mvc.field.data.text.TextField;
 
 public interface ReferenceField extends TextField {

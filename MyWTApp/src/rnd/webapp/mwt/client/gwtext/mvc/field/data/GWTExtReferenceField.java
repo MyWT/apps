@@ -2,13 +2,13 @@ package rnd.webapp.mwt.client.gwtext.mvc.field.data;
 
 import java.util.List;
 
+import rnd.expression.Expression;
 import rnd.webapp.mwt.client.Logger;
 import rnd.webapp.mwt.client.bean.ValueChangeEvent;
 import rnd.webapp.mwt.client.bean.ValueChangeListenerAdapter;
 import rnd.webapp.mwt.client.data.FilterInfo;
 import rnd.webapp.mwt.client.data.Row;
 import rnd.webapp.mwt.client.data.RowCacheImpl;
-import rnd.webapp.mwt.client.expression.Expression;
 import rnd.webapp.mwt.client.gwtext.mvc.field.data.text.GWTExtTextField;
 import rnd.webapp.mwt.client.mvc.MVCHandlerFactory;
 import rnd.webapp.mwt.client.mvc.field.Table.RowTableModel;

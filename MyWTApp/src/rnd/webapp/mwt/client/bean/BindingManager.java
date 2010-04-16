@@ -1,10 +1,10 @@
 package rnd.webapp.mwt.client.bean;
 
+import rnd.expression.Expression;
+import rnd.expression.XChangeEvent;
+import rnd.expression.XChangeListener;
 import rnd.webapp.mwt.client.expression.BeanListPropertyExpression;
 import rnd.webapp.mwt.client.expression.BeanPropertyExpression;
-import rnd.webapp.mwt.client.expression.Expression;
-import rnd.webapp.mwt.client.expression.XChangeEvent;
-import rnd.webapp.mwt.client.expression.XChangeListener;
 import rnd.webapp.mwt.client.mvc.field.Field;
 import rnd.webapp.mwt.client.mvc.field.Table;
 import rnd.webapp.mwt.client.mvc.page.form.Form;
