@@ -8,5 +8,9 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/Persistence"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Utils"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Expressions"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AA"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PMT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MyWT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MyGWT-Ext"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

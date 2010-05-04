@@ -1,9 +1,9 @@
 package rnd.webapp.mwtapp.client;
 
-import rnd.webapp.mwt.client.MWTHelper;
-import rnd.webapp.mwt.client.gwtext.mvc.GWTExtMVCHandler;
-import rnd.webapp.mwt.client.mvc.MVCHandlerFactory;
-import rnd.webapp.mwt.client.mvc.page.Page;
+import rnd.mywt.client.MWTHelper;
+import rnd.mywt.client.mvc.MVCHandlerFactory;
+import rnd.mywt.client.mvc.page.Page;
+import rnd.webapp.mygwtext.client.mvc.GWTExtMVCHandler;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootPanel;
