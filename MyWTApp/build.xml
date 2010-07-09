@@ -1,0 +1,82 @@
+<project name="MyWebApp" default="build">
+
+	<property name="root-dir" location="../../" />
+
+	<property name="tools.utils" location="${root-dir}/Tools/Utils/" />
+	<property name="tools.expressions" location="${root-dir}/Tools/Expressions/" />
+	<property name="tools.validations" location="${root-dir}/Tools/Validations/" />
+	<property name="tools.persistence" location="${root-dir}/Tools/Persistence/" />
+
+	<property name="mywt.mywt" location="${root-dir}/MyWT/MyWT/" />
+	<property name="mywt.mygwt" location="${root-dir}/MyWT/MyGWT/" />
+	<property name="mywt.mygwt-ext" location="${root-dir}/MyWT/MyGWT-Ext/" />
+
+	<property name="module.aa" location="${root-dir}/Module/AA" />
+	<property name="module.pmt" location="${root-dir}/Module/PMT" />
+
+
+	<target name="build">
+
+		<antcall target="build-project">
+			<param name="project.name" value="utils" />
+			<param name="project.path" value="${tools.utils}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="expressions" />
+			<param name="project.path" value="${tools.expressions}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="validations" />
+			<param name="project.path" value="${tools.validations}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="persistence" />
+			<param name="project.path" value="${tools.persistence}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="mywt" />
+			<param name="project.path" value="${mywt.mywt}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="mygwt" />
+			<param name="project.path" value="${mywt.mygwt}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="mygwt-ext" />
+			<param name="project.path" value="${mywt.mygwt-ext}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="aa" />
+			<param name="project.path" value="${module.aa}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="pmt" />
+			<param name="project.path" value="${module.pmt}" />
+		</antcall>
+
+	</target>
+
+
+	<target name="build-project">
+
+		<echo>Building Project : ${project.name} </echo>
+
+		<property name="destfile" location="war/WEB-INF/lib/${project.name}.jar" />
+
+		<delete file="${destfile}" />
+
+		<jar destfile="${destfile}" includes="${destdir}" />
+
+		<echo>Project Build : ${project.name} , Binary : ${destfile} </echo>
+
+	</target>
+
+</project>
