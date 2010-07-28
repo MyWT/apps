@@ -73,7 +73,9 @@
 
 		<delete file="${destfile}" />
 
-		<jar destfile="${destfile}" includes="${destdir}" />
+		<jar destfile="${destfile}">
+			<fileset dir="${project.path}/bin" />
+		</jar>
 
 		<echo>Project Build : ${project.name} , Binary : ${destfile} </echo>
 
