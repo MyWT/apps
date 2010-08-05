@@ -9,7 +9,7 @@
   
     <servlet>
 		<servlet-name>ARB</servlet-name>
-		<servlet-class>rnd.webapp.mwt.server.ARBImpl</servlet-class>
+		<servlet-class>rnd.webapp.mygwt.server.ARBImpl</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

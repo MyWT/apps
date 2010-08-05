@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/pmt.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/utils.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/validations.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/xp.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

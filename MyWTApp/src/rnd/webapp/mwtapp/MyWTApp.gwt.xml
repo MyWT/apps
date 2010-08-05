@@ -6,8 +6,9 @@
 	<script src="js/ext/adapter/ext/ext-base.js" />
 	<script src="js/ext/ext-all.js" />
 
-	<inherits name="rnd.webapp.mwt.MGWT" />
-	<inherits name="rnd.webapp.mwt.MGWT-Ext" />
+	<inherits name="rnd.mywt.MyWT" />
+	<inherits name="rnd.webapp.mygwt.MyGWT" />
+	<inherits name="rnd.webapp.mygwtext.MyGWTExt" />
 
 	<inherits name="aa.AA" />
 	<inherits name="pmt.PMT" />

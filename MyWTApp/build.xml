@@ -4,6 +4,7 @@
 
 	<property name="tools.utils" location="${root-dir}/Tools/Utils/" />
 	<property name="tools.expressions" location="${root-dir}/Tools/Expressions/" />
+	<property name="tools.xp" location="${root-dir}/Tools/XP/" />
 	<property name="tools.validations" location="${root-dir}/Tools/Validations/" />
 	<property name="tools.persistence" location="${root-dir}/Tools/Persistence/" />
 
@@ -14,6 +15,7 @@
 	<property name="module.aa" location="${root-dir}/Module/AA" />
 	<property name="module.pmt" location="${root-dir}/Module/PMT" />
 
+	<property name="destdir" location="war/WEB-INF/lib/" />
 
 	<target name="build">
 
@@ -22,10 +24,14 @@
 			<param name="project.path" value="${tools.utils}" />
 		</antcall>
 
-		<antcall target="build-project">
-			<param name="project.name" value="expressions" />
-			<param name="project.path" value="${tools.expressions}" />
-		</antcall>
+		<ant dir="${tools.expressions}" />
+		<copy file="${tools.expressions}/expressions.jar" todir="${destdir}" />
+
+		<ant dir="${tools.xp}" />
+		<copy file="${tools.xp}/xp.jar" todir="${destdir}" />
+
+		<ant dir="${tools.validations}" />
+		<copy file="${tools.validations}/validations.jar" todir="${destdir}" />
 
 		<antcall target="build-project">
 			<param name="project.name" value="validations" />
@@ -67,17 +73,12 @@
 
 	<target name="build-project">
 
-		<echo>Building Project : ${project.name} </echo>
-
-		<property name="destfile" location="war/WEB-INF/lib/${project.name}.jar" />
-
-		<delete file="${destfile}" />
-
-		<jar destfile="${destfile}">
+		<jar destfile="${project.path}/${project.name}.jar">
 			<fileset dir="${project.path}/bin" />
+			<fileset dir="${project.path}/src" />
 		</jar>
 
-		<echo>Project Build : ${project.name} , Binary : ${destfile} </echo>
+		<copy file="${project.path}/${project.name}.jar" todir="${destdir}" />
 
 	</target>
 
