@@ -82,4 +82,21 @@
 
 	</target>
 
+	<target name="clean">
+
+		<delete file="${destdir}/utils.jar" />
+		<delete file="${destdir}/expressions.jar" />
+		<delete file="${destdir}/xp.jar" />
+		<delete file="${destdir}/validations.jar" />
+		<delete file="${destdir}/persistence.jar" />
+
+		<delete file="${destdir}/mywt.jar" />
+		<delete file="${destdir}/mygwt.jar" />
+		<delete file="${destdir}/mygwt-ext.jar" />
+
+		<delete file="${destdir}/aa.jar" />
+		<delete file="${destdir}/pmt.jar" />
+
+	</target>
+
 </project>
