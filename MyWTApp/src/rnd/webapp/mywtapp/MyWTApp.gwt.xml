@@ -13,6 +13,6 @@
 	<inherits name="aa.AA" />
 	<inherits name="pmt.PMT" />
 	
-	<entry-point class="rnd.webapp.mwtapp.client.MyWTApp" />
+	<entry-point class="rnd.webapp.mywtapp.client.MyWTApp" />
 	
 </module>
