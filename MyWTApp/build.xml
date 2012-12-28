@@ -10,7 +10,7 @@
 
 	<property name="mywt.mywt" location="${root-dir}/MyWT/MyWT/" />
 	<property name="mywt.mygwt" location="${root-dir}/MyWT/MyGWT/" />
-	<property name="mywt.mygwt-ext" location="${root-dir}/MyWT/MyGWT-Ext/" />
+	<property name="mywt.mygwtext" location="${root-dir}/MyWT/MyGWTExt/" />
 
 	<property name="module.aa" location="${root-dir}/Module/AA" />
 	<property name="module.pmt" location="${root-dir}/Module/PMT" />
@@ -34,11 +34,6 @@
 		<copy file="${tools.validations}/validations.jar" todir="${destdir}" />
 
 		<antcall target="build-project">
-			<param name="project.name" value="validations" />
-			<param name="project.path" value="${tools.validations}" />
-		</antcall>
-
-		<antcall target="build-project">
 			<param name="project.name" value="persistence" />
 			<param name="project.path" value="${tools.persistence}" />
 		</antcall>
@@ -54,8 +49,8 @@
 		</antcall>
 
 		<antcall target="build-project">
-			<param name="project.name" value="mygwt-ext" />
-			<param name="project.path" value="${mywt.mygwt-ext}" />
+			<param name="project.name" value="mygwtext" />
+			<param name="project.path" value="${mywt.mygwtext}" />
 		</antcall>
 
 		<antcall target="build-project">
@@ -92,7 +87,7 @@
 
 		<delete file="${destdir}/mywt.jar" />
 		<delete file="${destdir}/mygwt.jar" />
-		<delete file="${destdir}/mygwt-ext.jar" />
+		<delete file="${destdir}/mygwtext.jar" />
 
 		<delete file="${destdir}/aa.jar" />
 		<delete file="${destdir}/pmt.jar" />

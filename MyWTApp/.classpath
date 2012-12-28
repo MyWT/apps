@@ -13,7 +13,6 @@
 	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/aa.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/expressions.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/mygwt-ext.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/mygwt.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/mywt.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/persistence.jar"/>
@@ -21,5 +20,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/utils.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/validations.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/xp.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/mygwtext.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
