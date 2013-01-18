@@ -6,6 +6,7 @@
 	<property name="tools.expressions" location="${root-dir}/Tools/Expressions/" />
 	<property name="tools.xp" location="${root-dir}/Tools/XP/" />
 	<property name="tools.validations" location="${root-dir}/Tools/Validations/" />
+	<property name="tools.jpersist" location="${root-dir}/RnD/jPersist/" />
 	<property name="tools.persistence" location="${root-dir}/Tools/Persistence/" />
 
 	<property name="mywt.mywt" location="${root-dir}/MyWT/MyWT/" />
@@ -32,7 +33,12 @@
 
 		<ant dir="${tools.validations}" />
 		<copy file="${tools.validations}/validations.jar" todir="${destdir}" />
-
+		
+		<antcall target="build-project">
+					<param name="project.name" value="jPersist" />
+					<param name="project.path" value="${tools.jpersist}" />
+		</antcall>
+		
 		<antcall target="build-project">
 			<param name="project.name" value="persistence" />
 			<param name="project.path" value="${tools.persistence}" />
