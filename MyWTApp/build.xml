@@ -13,6 +13,7 @@
 	<property name="mywt.mygwt" location="${root-dir}/MyWT/MyGWT/" />
 	<property name="mywt.mygwtext" location="${root-dir}/MyWT/MyGWTExt/" />
 
+	<property name="module.ad" location="${root-dir}/Module/AD" />
 	<property name="module.aa" location="${root-dir}/Module/AA" />
 	<property name="module.pmt" location="${root-dir}/Module/PMT" />
 
@@ -33,12 +34,12 @@
 
 		<ant dir="${tools.validations}" />
 		<copy file="${tools.validations}/validations.jar" todir="${destdir}" />
-		
+
 		<antcall target="build-project">
-					<param name="project.name" value="jPersist" />
-					<param name="project.path" value="${tools.jpersist}" />
+			<param name="project.name" value="jPersist" />
+			<param name="project.path" value="${tools.jpersist}" />
 		</antcall>
-		
+
 		<antcall target="build-project">
 			<param name="project.name" value="persistence" />
 			<param name="project.path" value="${tools.persistence}" />
@@ -57,6 +58,11 @@
 		<antcall target="build-project">
 			<param name="project.name" value="mygwtext" />
 			<param name="project.path" value="${mywt.mygwtext}" />
+		</antcall>
+
+		<antcall target="build-project">
+			<param name="project.name" value="ad" />
+			<param name="project.path" value="${module.ad}" />
 		</antcall>
 
 		<antcall target="build-project">
