@@ -6,8 +6,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gwtext.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/sqljdbc4.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AA"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/AD"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ADApp"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Expressions"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jPersist"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MyGWT"/>
