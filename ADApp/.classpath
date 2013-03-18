@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/gwtext.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/sqljdbc4.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Expressions"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/jPersist"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MyGWT"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MyGWTExt"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/MyWT"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Persistence"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/Utils"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Validations"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/XP"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AD"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwtext.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

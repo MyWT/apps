@@ -1,4 +1,4 @@
-<module rename-to='mywtapp'>
+<module rename-to='adapp'>
 
 	<inherits name="com.gwtext.GwtExt" />
 
@@ -9,10 +9,9 @@
 	<inherits name="rnd.mywt.MyWT" />
 	<inherits name="rnd.webapp.mygwt.MyGWT" />
 	<inherits name="rnd.webapp.mygwtext.MyGWTExt" />
-	<!-- 
-	<inherits name="aa.AA" />
-	<inherits name="pmt.PMT" />
- 	-->	
-	<entry-point class="rnd.webapp.mywtapp.client.MyWTApp" />
+
+	<inherits name="ad.AD" />
+	
+	<entry-point class="rnd.webapp.adapp.client.ADApp" />
 	
 </module>

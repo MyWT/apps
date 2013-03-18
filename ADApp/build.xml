@@ -1,12 +1,12 @@
 <project name="MyWebApp" default="build">
 
 	<property name="root-dir" location="../../" />
-
+	<!--
 	<property name="tools.utils" location="${root-dir}/Tools/Utils/" />
+	-->
 	<property name="tools.expressions" location="${root-dir}/Tools/Expressions/" />
 	<property name="tools.xp" location="${root-dir}/Tools/XP/" />
 	<property name="tools.validations" location="${root-dir}/Tools/Validations/" />
-	<property name="tools.jpersist" location="${root-dir}/RnD/jPersist/" />
 	<property name="tools.persistence" location="${root-dir}/Tools/Persistence/" />
 
 	<property name="mywt.mywt" location="${root-dir}/MyWT/MyWT/" />
@@ -15,19 +15,16 @@
 
 	<property name="module.ad" location="${root-dir}/Module/AD" />
 
-	<!-- 
-	<property name="module.aa" location="${root-dir}/Module/AA" />
-	<property name="module.pmt" location="${root-dir}/Module/PMT" />
-	-->
-	
 	<property name="destdir" location="war/WEB-INF/lib/" />
 
 	<target name="build">
 
+		<!--
 		<antcall target="build-project">
 			<param name="project.name" value="utils" />
 			<param name="project.path" value="${tools.utils}" />
 		</antcall>
+		-->
 
 		<ant dir="${tools.expressions}" />
 		<copy file="${tools.expressions}/expressions.jar" todir="${destdir}" />
@@ -37,11 +34,6 @@
 
 		<ant dir="${tools.validations}" />
 		<copy file="${tools.validations}/validations.jar" todir="${destdir}" />
-
-		<antcall target="build-project">
-			<param name="project.name" value="jPersist" />
-			<param name="project.path" value="${tools.jpersist}" />
-		</antcall>
 
 		<antcall target="build-project">
 			<param name="project.name" value="persistence" />
@@ -67,19 +59,8 @@
 			<param name="project.name" value="ad" />
 			<param name="project.path" value="${module.ad}" />
 		</antcall>
-		<!--
-		<antcall target="build-project">
-			<param name="project.name" value="aa" />
-			<param name="project.path" value="${module.aa}" />
-		</antcall>
 
-		<antcall target="build-project">
-			<param name="project.name" value="pmt" />
-			<param name="project.path" value="${module.pmt}" />
-		</antcall>
-		-->
 	</target>
-
 
 	<target name="build-project">
 
@@ -89,23 +70,6 @@
 		</jar>
 
 		<copy file="${project.path}/${project.name}.jar" todir="${destdir}" />
-
-	</target>
-
-	<target name="clean">
-
-		<delete file="${destdir}/utils.jar" />
-		<delete file="${destdir}/expressions.jar" />
-		<delete file="${destdir}/xp.jar" />
-		<delete file="${destdir}/validations.jar" />
-		<delete file="${destdir}/persistence.jar" />
-
-		<delete file="${destdir}/mywt.jar" />
-		<delete file="${destdir}/mygwt.jar" />
-		<delete file="${destdir}/mygwtext.jar" />
-
-		<delete file="${destdir}/aa.jar" />
-		<delete file="${destdir}/pmt.jar" />
 
 	</target>
 
