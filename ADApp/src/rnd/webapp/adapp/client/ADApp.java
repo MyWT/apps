@@ -1,6 +1,7 @@
 package rnd.webapp.adapp.client;
 
 import rnd.mywt.client.MyWTHelper;
+import rnd.mywt.client.arb.ARBUtils;
 import rnd.mywt.client.mvc.MVCHandlerFactory;
 import rnd.mywt.client.mvc.page.Page;
 import rnd.webapp.mygwtext.client.mvc.GWTExtMVCHandler;
@@ -18,8 +19,9 @@ public class ADApp implements EntryPoint {
 
 		// Page homePage = new GWTExtADHomePage();
 		// RootPanel.get().add((Widget) homePage.getView().getViewObject());
-		
+
 		MyWTHelper.setApplicationHelper(new ADAppHelper());
+		ARBUtils.setARB(ARBUtils.getARB());
 
 		Page homePage = MVCHandlerFactory.getMVCHandler().createHomePage();
 		RootPanel.get().add((Widget) homePage.getView().getViewObject());
