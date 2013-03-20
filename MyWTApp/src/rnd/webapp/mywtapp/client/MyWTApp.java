@@ -1,8 +1,7 @@
 package rnd.webapp.mywtapp.client;
 
-import rnd.mywt.client.arb.ARBUtils;
-import rnd.mywt.client.mvc.MVCHandlerFactory;
-import rnd.mywt.client.mvc.page.Page;
+import rnd.mywt.client.MyWTHelper;
+import rnd.mywt.client.mvc.page.HomePage;
 import rnd.webapp.mygwt.client.ARBRemoteServiceProvider;
 import rnd.webapp.mygwtext.client.mvc.GWTExtMVCHandler;
 
@@ -14,13 +13,15 @@ public class MyWTApp implements EntryPoint {
 
 	public void onModuleLoad() {
 
-		MVCHandlerFactory.setMVCHandler(new GWTExtMVCHandler());
+		MyWTHelper.setMVCHandler(new GWTExtMVCHandler());
 		// MVCHandlerFactory.setMVCHandler(new GWTMVCHandler());
 
 		// MWTHelper.setApplicationHelper(new MyApplicationHelper());
-		ARBUtils.setARB(new ARBRemoteServiceProvider());
+		MyWTHelper.setApplicationName("myapp");
+		MyWTHelper.setARB(new ARBRemoteServiceProvider());
 
-		Page homePage = MVCHandlerFactory.getMVCHandler().createHomePage();
+		HomePage homePage = MyWTHelper.getMVCHandler().createHomePage();
+		MyWTHelper.setHomePage(homePage);
 
 		RootPanel.get().add((Widget) homePage.getView().getViewObject());
 
