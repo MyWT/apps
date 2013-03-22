@@ -9,6 +9,8 @@
 	<inherits name="rnd.mywt.MyWT" />
 	<inherits name="rnd.webapp.mygwt.MyGWT" />
 	<inherits name="rnd.webapp.mygwtext.MyGWTExt" />
+	
+	<inherits name="ad.AD" />
 	<!-- 
 	<inherits name="aa.AA" />
 	<inherits name="pmt.PMT" />

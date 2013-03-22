@@ -13,14 +13,14 @@ public class MyWTApp implements EntryPoint {
 
 	public void onModuleLoad() {
 
-		MyWTHelper.setMVCHandler(new GWTExtMVCHandler());
 		// MVCHandlerFactory.setMVCHandler(new GWTMVCHandler());
+		MyWTHelper.setMVCFactory(new GWTExtMVCHandler());
 
-		// MWTHelper.setApplicationHelper(new MyApplicationHelper());
+		MyWTHelper.setApplicationHelper(new MyApplicationHelper("myapp"));
 		MyWTHelper.setApplicationName("myapp");
 		MyWTHelper.setARB(new ARBRemoteServiceProvider());
 
-		HomePage homePage = MyWTHelper.getMVCHandler().createHomePage();
+		HomePage homePage = MyWTHelper.getMVCFactory().createHomePage();
 		MyWTHelper.setHomePage(homePage);
 
 		RootPanel.get().add((Widget) homePage.getView().getViewObject());
