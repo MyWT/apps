@@ -3,7 +3,7 @@ package rnd.webapp.mywtapp.client;
 import rnd.mywt.client.MyWTHelper;
 import rnd.mywt.client.mvc.page.HomePage;
 import rnd.webapp.mygwt.client.ARBRemoteServiceProvider;
-import rnd.webapp.mygwtext.client.mvc.GWTExtMVCHandler;
+import rnd.webapp.mygwtext.client.mvc.GWTExtMVCBeanFactory;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.RootPanel;
@@ -14,7 +14,7 @@ public class MyWTApp implements EntryPoint {
 	public void onModuleLoad() {
 
 		// MVCHandlerFactory.setMVCHandler(new GWTMVCHandler());
-		MyWTHelper.setMVCFactory(new GWTExtMVCHandler());
+		MyWTHelper.setMVCFactory(new GWTExtMVCBeanFactory());
 
 		MyWTHelper.setApplicationHelper(new MyApplicationHelper("myapp"));
 		MyWTHelper.setApplicationName("myapp");
