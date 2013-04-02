@@ -4,6 +4,7 @@
 
 	<property name="tools.utils" location="${root-dir}/Tools/Utils/" />
 	<property name="tools.expressions" location="${root-dir}/Tools/Expressions/" />
+	<property name="tools.beans" location="${root-dir}/Tools/Beans/" />
 	<property name="tools.xp" location="${root-dir}/Tools/XP/" />
 	<property name="tools.validations" location="${root-dir}/Tools/Validations/" />
 	<property name="tools.jpersist" location="${root-dir}/RnD/jPersist/" />
@@ -31,6 +32,12 @@
 
 		<ant dir="${tools.expressions}" />
 		<copy file="${tools.expressions}/expressions.jar" todir="${destdir}" />
+		
+		<antcall target="build-project">
+			<param name="project.name" value="beans" />
+			<param name="project.path" value="${tools.beans}" />
+		</antcall>
+
 
 		<ant dir="${tools.xp}" />
 		<copy file="${tools.xp}/xp.jar" todir="${destdir}" />

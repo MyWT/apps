@@ -15,5 +15,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/Validations"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/XP"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AD"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Beans"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
