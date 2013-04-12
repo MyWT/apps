@@ -15,9 +15,9 @@
 	<property name="mywt.mygwtext" location="${root-dir}/MyWT/MyGWTExt/" />
 
 	<property name="module.ad" location="${root-dir}/Module/AD" />
+	<property name="module.aa" location="${root-dir}/Module/AA" />
 
 	<!-- 
-	<property name="module.aa" location="${root-dir}/Module/AA" />
 	<property name="module.pmt" location="${root-dir}/Module/PMT" />
 	-->
 	
@@ -74,11 +74,13 @@
 			<param name="project.name" value="ad" />
 			<param name="project.path" value="${module.ad}" />
 		</antcall>
-		<!--
+		
 		<antcall target="build-project">
 			<param name="project.name" value="aa" />
 			<param name="project.path" value="${module.aa}" />
 		</antcall>
+		
+		<!--
 
 		<antcall target="build-project">
 			<param name="project.name" value="pmt" />
