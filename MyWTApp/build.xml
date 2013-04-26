@@ -16,11 +16,8 @@
 
 	<property name="module.ad" location="${root-dir}/Module/AD" />
 	<property name="module.aa" location="${root-dir}/Module/AA" />
-
-	<!-- 
 	<property name="module.pmt" location="${root-dir}/Module/PMT" />
-	-->
-	
+
 	<property name="destdir" location="war/WEB-INF/lib/" />
 
 	<target name="build">
@@ -80,13 +77,11 @@
 			<param name="project.path" value="${module.aa}" />
 		</antcall>
 		
-		<!--
-
 		<antcall target="build-project">
 			<param name="project.name" value="pmt" />
 			<param name="project.path" value="${module.pmt}" />
 		</antcall>
-		-->
+
 	</target>
 
 
