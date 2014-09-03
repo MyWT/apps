@@ -1,7 +1,7 @@
 package rnd.webapp.mywtapp.client;
 
-import ad.client.module.ADModuleHelper;
 import rnd.mywt.client.application.AbstractApplicationHelper;
+import ad.client.module.ADModuleHelper;
 
 public class MyApplicationHelper extends AbstractApplicationHelper {
 
@@ -10,10 +10,12 @@ public class MyApplicationHelper extends AbstractApplicationHelper {
 	}
 
 	@Override
-	public void initialiseApplication() {
+	public void initializeApplication() {
 		addModuleHelper(new ADModuleHelper());
 		// addModuleHelper(new AAModuleHelper());
 		// addModuleHelper(new PMTModuleHelper());
+		
+		super.initializeApplication();
 	}
 
 }
